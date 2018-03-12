@@ -1,0 +1,105 @@
+* {
+	--main-max-width: 1800px;
+
+
+	--color-white: #f3f2f3;
+}
+
+p {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 150%;
+	letter-spacing: 1px;
+}
+
+body {
+	position: absolute;
+	top: 0;
+	left: -8px;
+	width: 100%;
+
+	background-image: url("img/header.png");
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+header {
+	width: 100%;
+	height: 250px;
+	margin: auto;
+
+	text-align: center;
+}
+
+#header-links-bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 32px;
+	background-color: rgba(0,0,0, 0.5);
+	padding-top: 5px;
+}
+
+#header-links {
+	margin: auto;
+	width: 100%;
+	max-width: var(--main-max-width);
+}
+
+#header-links > li {
+	list-style: none;
+	float: left;
+	padding: 0 15px 0 15px;
+}
+
+#header-links > li > a {
+	color: var(--color-white);
+	text-transform: uppercase;
+
+	font-size: 150%;
+	font-family: 'Cutive Mono', monospace;
+	text-decoration: none;
+}
+
+#header-links > li > a:hover, #header-links > li > a:focus {
+	color: #fff;
+	text-shadow: 0 0 2px #fff;
+	text-decoration: underline;
+}
+
+header > h1 {
+	color: var(--color-white);
+	text-shadow: 1px 1px 0px rgba(0,0,0, .6),
+	2px 2px 0px rgba(0,0,0, .6),
+	3px 3px 0px rgba(0,0,0, .6),
+	4px 4px 0px rgba(0,0,0, .6),
+	5px 5px 0px rgba(0,0,0, .6),
+	6px 6px 0px rgba(0,0,0, .6),
+	7px 7px 0px rgba(0,0,0, .6),
+	0px 0px 7px #000,
+	7px 7px 7px #000;
+
+	font-family: 'Anton', sans-serif;
+	font-size: 450%;
+	letter-spacing: 5px;
+
+	padding-top: 10px;
+}
+
+#content-bg {
+	transform: translate(-50%, 0);
+	margin-left: 50%;
+	width: 96%;
+	max-width: var(--main-max-width);
+
+	background-color: var(--color-white);
+	border-radius: 15px;
+	box-shadow: 3px 3px 10px #000;
+}
+
+#content {
+	padding: 30px;
+}
